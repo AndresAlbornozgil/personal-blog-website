@@ -13,8 +13,13 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: solid;
-    height: 50px;
+    height: 70px;
     padding: 20px;
+}
+
+header div {
+    display: inline-flex;
+    align-items: center;
 }
 
 footer {
