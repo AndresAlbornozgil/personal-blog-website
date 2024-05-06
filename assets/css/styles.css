@@ -24,7 +24,7 @@ h1 {
     float: left;
     width: 50%;
     height: 90vh;
-    margin-top: 5px;
+    
     border-top: solid black;
     margin-right: 5px;
     border-right: solid black;
@@ -53,13 +53,28 @@ label {
 }
 
 .circle {
-    padding: 160px 80px 160px 80px;
+    padding: 150px 50px 150px 50px;
     border-radius: 50%;
-    background: goldenrod
+    background: linear-gradient(to top,
+    goldenrod 0%,
+    goldenrod 20%,
+    rgba(218,165,32,0.9) 20%,
+    rgba(218,165,32,0.9) 40%,
+    rgba(218,165,32,0.7) 40%,
+    rgba(218,165,32,0.7) 60%,
+    rgba(218,165,32,0.5) 60%,
+    rgba(218,165,32,0.5) 80%,
+    rgba(218,165,32,0.3) 80%,
+    rgba(218,165,32,0.3) 100%);
 }
-e
+
+#screen-mode {
+    background-color: gold;
+    border-radius: 50%;
+}
+
 #username, #title {
-    height: 20px;
+    height: 25px;
 }
 
 #content {
