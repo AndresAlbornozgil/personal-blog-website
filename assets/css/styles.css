@@ -11,6 +11,7 @@ header {
     border-bottom: solid;
     height: 50px;
     padding-right: 20px;
+    margin-bottom: 5px;
 }
 
 body {
@@ -24,7 +25,6 @@ h1 {
     float: left;
     width: 50%;
     height: 90vh;
-    
     border-top: solid black;
     margin-right: 5px;
     border-right: solid black;
