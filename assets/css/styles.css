@@ -28,8 +28,11 @@ h1 {
     border-top: solid black;
     margin-right: 5px;
     border-right: solid black;
-    color: white;
     -webkit-text-stroke: black 0.5px;
+}
+
+h1 span {
+    color: white;
 }
 
 form {
