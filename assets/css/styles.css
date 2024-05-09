@@ -16,6 +16,7 @@ header {
 
 body {
     height: 100vh;
+    background-color: white;
 }
 
 h1 {
@@ -25,9 +26,9 @@ h1 {
     float: left;
     width: 50%;
     height: 90vh;
-    border-top: solid black;
+    border-top: solid;
     margin-right: 5px;
-    border-right: solid black;
+    border-right: solid;
     -webkit-text-stroke: black 0.5px;
 }
 
@@ -72,8 +73,15 @@ label {
 }
 
 #screen-mode {
+    color: black;
     background-color: gold;
     border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+#screen-mode:hover {
+    cursor: pointer;
 }
 
 #username, #title {

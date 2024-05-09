@@ -39,7 +39,9 @@ footer div {
     flex-direction: column;
 }
 
-
+#screen-mode:hover {
+    cursor: pointer;
+}
 
 #back-button {
     padding: 0 10px 0 10px;
@@ -49,6 +51,9 @@ footer div {
 }
 
 #screen-mode {
+    color: black;
     background-color: gold;
     border-radius: 50%;
+    height: 20px;
+    width: 20px;
 }
