@@ -22,6 +22,29 @@ function toggleMode() {
 
     // Toggle the mode
     darkMode = !darkMode;
-    }
+}
 
 document.querySelector('#screen-mode').addEventListener('click', toggleMode);
+
+const handlingFormSubmit = function(event) {
+    event.preventDefault();
+    const username = document.querySelector('#username').value.trim();
+    const title = document.querySelector('#title').value.trim();
+    const content = document.querySelector('#content').value.trim();
+
+    if (!username || !title || !content) {
+        const errorHandler = document.querySelector('#error');
+        errorHandler.textContent = 'Please complete all the fields'
+    }
+
+    const inputData = {
+        username: username,
+        title: title,
+        content: content,
+    }
+
+    localStorage.setItem('blogPost', JSON.stringify(inputData));
+
+    location.href='./blog.html'
+}
+

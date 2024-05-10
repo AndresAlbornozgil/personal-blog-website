@@ -27,3 +27,10 @@ function toggleMode() {
 }
 
 document.querySelector('#screen-mode').addEventListener('click', toggleMode);
+
+const blogPostTransition = function() {
+    const readLocalStorage = localStorage.getItem('blogPost');
+    console.log(readLocalStorage);
+}
+
+blogPostTransition();
