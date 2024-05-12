@@ -21,7 +21,7 @@ Once on the landing page, you will be presented with a form at the right side. F
 
 In addition, to the upper right of the webpage there is a "sun" icon (click on it to toggle light/dark mode).
 
-![image of portfolio website]()
+![image of Personal Blog Website](assets/images/personal-blog-website-1st.JPG)
 
 ## Credits
 Andres Albornoz
