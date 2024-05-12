@@ -35,6 +35,25 @@ footer div {
     flex-direction: column;
 }
 
+.cardBody {
+    padding: 10px;
+    margin: 5px;
+    border: black solid;
+}
+
+.cardBody h5 {
+    border-bottom: solid;
+}
+
+.cardBody h6 {
+    padding-left: 10px;
+}
+
+.cardBody p {
+    padding-top: 50px;
+    margin-bottom: 0px;
+}
+
 #back-button {
     padding: 0 10px 0 10px;
     margin-right: 10px;
