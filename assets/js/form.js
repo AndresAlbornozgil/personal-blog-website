@@ -11,12 +11,14 @@ function toggleMode() {
         body.style.color = "black";
         button.style.backgroundColor = "gold";
         button.style.color = "black";
+        document.querySelector('#submit').style.backgroundColor = 'black'
     } else {
         // Switch to dark mode
         body.style.backgroundColor = "black";
         body.style.color = "white";
         button.style.backgroundColor = "indigo";
         button.style.color = "white";
+        document.querySelector('#submit').style.backgroundColor = 'indigo'
     }
     // Toggle the mode
     darkMode = !darkMode;
@@ -26,7 +28,7 @@ function toggleMode() {
 document.querySelector('#screen-mode').addEventListener('click', toggleMode);
 
 
-
+ let dataArray = []
 
 // Handles form submission
 const handlingFormSubmit = function(event) {
@@ -34,6 +36,8 @@ const handlingFormSubmit = function(event) {
     const username = document.querySelector('#username').value.trim();
     const title = document.querySelector('#title').value.trim();
     const content = document.querySelector('#content').value.trim();
+   
+
 
     if (!username || !title || !content) {
         const errorHandler = document.querySelector('#error');
@@ -47,12 +51,21 @@ const handlingFormSubmit = function(event) {
         content: content,
     };
 
+    dataArray.push(inputData);
+
+    console.log(dataArray);
+
     // Store form data in localStorage
     // Modify the key to store multiple submissions
-    localStorage.setItem('blogPost', JSON.stringify(inputData));
+    localStorage.setItem('blogPost', JSON.stringify(dataArray));
+    redirectPage();
 
-    // Redirect to blog.html
-    window.location.href = './blog.html';
+
+    
+}
+function redirectPage() {
+  // Redirect to blog.html
+  window.location.href = './blog.html';  
 }
 
 // Event listener for form submission

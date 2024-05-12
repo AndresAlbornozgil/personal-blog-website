@@ -31,25 +31,37 @@ function toggleMode() {
 // Event listener for mode toggle button
 document.querySelector('#screen-mode').addEventListener('click', toggleMode);
 
-
-
+let dataArray = []
 
 // Populates blog posts in body of blog.html
-const blogPostTransition = function() {
+const blogPostTransition = function () {
     // Retrieve data from localStorage
+    const blogContainer = document.getElementById('blog-post');
+
+
+    // if (storedData) {
     const storedData = localStorage.getItem('blogPost');
+    // Parse JSON data
+    const dataArray = JSON.parse(storedData);
 
-    if (storedData) {
-        // Parse JSON data
-        const blogPost = JSON.parse(storedData);
+    // }
+    for (let i = 0; i < dataArray.length; i++) {
+        const blogItem = dataArray[i];
 
+        const card = document.createElement('div')
+        card.setAttribute("class", "card")
+        const cardBody = document.createElement('div')
+        card.appendChild(cardBody);
+        cardBody.setAttribute("class", "cardBody")
+        const userNameEl = document.createElement('h4')
+        const titleEl = document.createElement('h5')
+        const contentEl = document.createElement('p')
         // Display data on the page
-        document.querySelector('#username').textContent = blogPost.username;
-        document.querySelector('#title').textContent = blogPost.title;
-        document.querySelector('#content').textContent = blogPost.content;
-    } else {
-        // Handle case where no data is found in localStorage
-        console.log("No blog post data found in localStorage.");
+        userNameEl.textContent = blogItem.username;
+        titleEl.textContent = blogItem.title;
+        contentEl.textContent = blogItem.content;
+        cardBody.append(userNameEl, titleEl, contentEl);
+        blogContainer.append(card);
     }
 }
 
