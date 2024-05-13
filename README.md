@@ -15,7 +15,7 @@ A personal blog website where users can input and view blog posts. It's importan
 This project does not require an installation. However, you are welcome to to either clone the repository and access the project files or fork the repo.
 
 ## Usage
-Deployed on [GitHub Pages](https://andresalbornozgil.github.io/personal-blog-website/)
+Deployed on [Github Pages](https://andresalbornozgil.github.io/personal-blog-website/)
 
 Once on the landing page, you will be presented with a form at the right side. Fill out the form and click "submit". Afterwards, you will be redirected to a new webpage which displays a blog containing what you input in the form.
 
